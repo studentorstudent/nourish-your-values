@@ -1,5 +1,5 @@
 import { weeklyEntries } from "@/data/weekly-progress";
-import { CalendarDays } from "lucide-react";
+import { CalendarDays, FileText } from "lucide-react";
 
 const ProgressSection = () => {
   return (
@@ -28,9 +28,37 @@ const ProgressSection = () => {
               <p className="text-sm text-muted-foreground leading-relaxed mb-3">
                 {entry.description}
               </p>
-              <p className="text-sm text-foreground/80 leading-relaxed">
+              <p className="text-sm text-foreground/80 leading-relaxed mb-4">
                 {entry.content}
               </p>
+
+              {/* PDF Download Button */}
+              {entry.pdfUrl && (
+                <a
+                  href={entry.pdfUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary/10 text-primary border border-primary/30 hover:bg-primary/20 transition-colors text-sm font-medium"
+                >
+                  <FileText className="w-4 h-4" />
+                  View Presentation (PDF)
+                </a>
+              )}
+
+              {/* Vimeo Video Embed */}
+              {entry.vimeoId && (
+                <div className="mt-4 rounded-xl overflow-hidden aspect-video">
+                  <iframe
+                    src={`https://player.vimeo.com/video/${entry.vimeoId}?badge=0&autopause=0&player_id=0&app_id=58479`}
+                    width="100%"
+                    height="100%"
+                    frameBorder="0"
+                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                    title={entry.title}
+                    className="w-full h-full"
+                  />
+                </div>
+              )}
             </article>
           ))}
         </div>
