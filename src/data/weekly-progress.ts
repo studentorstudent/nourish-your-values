@@ -10,23 +10,64 @@ export interface WeeklyEntry {
 
 export const weeklyEntries: WeeklyEntry[] = [
   {
-    id: "challenge-1",
-    date: "Week 1 — February 2026",
-    title: "Challenge 1: Identifying Our Values",
+    id: "week-1",
+    date: "Week 1 — Challenges 1 & 2",
+    title: "Clarify Values & Set an Example",
     description:
-      "We began by reflecting on our personal values and how they connect to the food choices we make every day.",
+      "We began by reflecting on our personal values and set an example by aligning our daily food choices with those values.",
     content:
-      "In our first week, each team member identified their top personal values and explored how these values influence their daily nutrition habits. We discovered that values like discipline, self-respect, and awareness directly shape what we eat and how we feel.",
+      "In our first week, each team member identified their top personal values and explored how these values influence their daily nutrition habits. We discovered that values like discipline, self-respect, and awareness directly shape what we eat and how we feel. Building on that, we crafted a clear goal: create a meaningful social contribution by promoting healthy nutrition among students.",
     pdfUrl: "/challenge_1.pdf",
+    vimeoId: "1163961665",
   },
   {
-    id: "challenge-2",
-    date: "Week 2 — February 2026",
-    title: "Challenge 2: Setting Our Goal",
+    id: "week-2",
+    date: "Week 2 — Challenge 3",
+    title: "Envision the Future",
     description:
-      "We defined our project's mission — to inspire students to connect healthy eating with personal growth.",
+      "We envisioned a future where healthy eating is a natural part of every student's lifestyle.",
     content:
-      "Building on our values exploration, we crafted a clear goal: create a meaningful social contribution by promoting healthy nutrition among students. We outlined our weekly challenge format and committed to documenting every step of our journey.",
-    vimeoId: "1163961665",
+      "This week we looked ahead and imagined the long-term impact of our project. We discussed how sustainable nutrition habits can transform not just individual health but entire communities, and outlined a vision for what success looks like.",
+    vimeoId: "1167163517",
+  },
+  {
+    id: "week-3",
+    date: "Week 3 — Challenge 4",
+    title: "Enlist Others",
+    description:
+      "We reached out to fellow students and community members to join our healthy eating movement.",
+    content: "",
+  },
+  {
+    id: "week-4",
+    date: "Week 4 — Challenge 5",
+    title: "Search for Opportunities",
+    description:
+      "We explored new opportunities to expand our project's reach and impact.",
+    content: "",
+  },
+  {
+    id: "week-5",
+    date: "Week 5 — Challenge 6",
+    title: "Experiment and Take Risks",
+    description:
+      "We stepped outside our comfort zone to try bold new approaches to promoting nutrition.",
+    content: "",
+  },
+  {
+    id: "week-6",
+    date: "Week 6 — Challenge 7",
+    title: "Foster Collaboration",
+    description:
+      "We strengthened teamwork and built collaborative partnerships for our project.",
+    content: "",
+  },
+  {
+    id: "week-7",
+    date: "Week 7 — Challenges 8, 9 & 10",
+    title: "Strengthen Others, Recognize Contributions & Celebrate Values",
+    description:
+      "We wrapped up by empowering others, recognizing everyone's contributions, and celebrating the values that guided our journey.",
+    content: "",
   },
 ];
