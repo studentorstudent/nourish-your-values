@@ -37,6 +37,7 @@ export const weeklyEntries: WeeklyEntry[] = [
     description:
       "We reached out to fellow students and community members to join our healthy eating movement.",
     content: "",
+    vimeoId: "1167261559",
   },
   {
     id: "week-4",
