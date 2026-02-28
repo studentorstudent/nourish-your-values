@@ -1,5 +1,6 @@
 import { weeklyEntries } from "@/data/weekly-progress";
-import { CalendarDays, FileText } from "lucide-react";
+import { CalendarDays, FileText, ExternalLink } from "lucide-react";
+import SurveyResults from "./SurveyResults";
 
 const ProgressSection = () => {
   return (
@@ -44,6 +45,22 @@ const ProgressSection = () => {
                   View Presentation (PDF)
                 </a>
               )}
+
+              {/* Google Form Link */}
+              {entry.surveyFormUrl && (
+                <a
+                  href={entry.surveyFormUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary/10 text-primary border border-primary/30 hover:bg-primary/20 transition-colors text-sm font-medium ml-2"
+                >
+                  <ExternalLink className="w-4 h-4" />
+                  View Survey Form
+                </a>
+              )}
+
+              {/* Survey Results */}
+              {entry.hasSurveyResults && <SurveyResults />}
 
               {/* Vimeo Video Embed */}
               {entry.vimeoId && (
