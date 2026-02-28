@@ -1,6 +1,7 @@
 import { weeklyEntries } from "@/data/weekly-progress";
 import { CalendarDays, FileText, ExternalLink } from "lucide-react";
 import SurveyResults from "./SurveyResults";
+import OutreachSection from "./OutreachSection";
 
 const ProgressSection = () => {
   return (
@@ -61,6 +62,9 @@ const ProgressSection = () => {
 
               {/* Survey Results */}
               {entry.hasSurveyResults && <SurveyResults />}
+
+              {/* Outreach & Collaboration */}
+              {entry.hasOutreachSection && <OutreachSection />}
 
               {/* Vimeo Video Embed */}
               {entry.vimeoId && (
