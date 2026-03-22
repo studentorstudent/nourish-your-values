@@ -67,6 +67,9 @@ const ProgressSection = () => {
               {/* Outreach & Collaboration */}
               {entry.hasOutreachSection && <OutreachSection />}
 
+              {/* Workshop Gallery */}
+              {entry.hasWorkshopGallery && <WorkshopGallery />}
+
               {/* Vimeo Video Embed */}
               {entry.vimeoId && (
                 <div className="mt-4 rounded-xl overflow-hidden aspect-video">
