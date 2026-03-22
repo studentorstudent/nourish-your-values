@@ -9,6 +9,7 @@ export interface WeeklyEntry {
   surveyFormUrl?: string;
   hasSurveyResults?: boolean;
   hasOutreachSection?: boolean;
+  hasWorkshopGallery?: boolean;
 }
 
 export const weeklyEntries: WeeklyEntry[] = [
