@@ -9,6 +9,7 @@ export interface WeeklyEntry {
   surveyFormUrl?: string;
   hasSurveyResults?: boolean;
   hasOutreachSection?: boolean;
+  hasWorkshopGallery?: boolean;
 }
 
 export const weeklyEntries: WeeklyEntry[] = [
@@ -59,10 +60,11 @@ export const weeklyEntries: WeeklyEntry[] = [
     date: "Week 5 — Challenge 6",
     title: "Experiment and Take Risks",
     description:
-      "We reached out to multiple organizations and secured a collaboration with a nutrition expert for an upcoming workshop.",
+      "We organized a healthy eating workshop for students and reached out to organizations for future collaborations.",
     content:
       "As part of our effort to build meaningful partnerships, we contacted three organizations: the NU Cooking Club (proposing a hands-on cooking workshop or cook-off event), Cult Academy (proposing a professional chef-led workshop and chef interview), and the University Health Center (requesting an interview/discussion session with a nutritionist). In parallel, we invited a recognized Kazakhstan-based nutrition specialist with experience helping over 1,000 women improve their body composition, digestion, and well-being. She has officially agreed to conduct a workshop after March 10. The session will include a structured lecture on balanced nutrition, sustainable weight management, and gut health, followed by an interactive Q&A. The exact date and format (offline/online) will be confirmed soon.",
     hasOutreachSection: true,
+    hasWorkshopGallery: true,
   },
   {
     id: "week-6",
