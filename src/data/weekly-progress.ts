@@ -60,10 +60,9 @@ export const weeklyEntries: WeeklyEntry[] = [
     date: "Week 5 — Challenge 6",
     title: "Experiment and Take Risks",
     description:
-      "We organized a healthy eating workshop for students and reached out to organizations for future collaborations.",
+      "We organized a healthy eating workshop for students, presenting on nutrition principles and steps to adopt a healthier diet.",
     content:
-      "As part of our effort to build meaningful partnerships, we contacted three organizations: the NU Cooking Club (proposing a hands-on cooking workshop or cook-off event), Cult Academy (proposing a professional chef-led workshop and chef interview), and the University Health Center (requesting an interview/discussion session with a nutritionist). In parallel, we invited a recognized Kazakhstan-based nutrition specialist with experience helping over 1,000 women improve their body composition, digestion, and well-being. She has officially agreed to conduct a workshop after March 10. The session will include a structured lecture on balanced nutrition, sustainable weight management, and gut health, followed by an interactive Q&A. The exact date and format (offline/online) will be confirmed soon.",
-    hasOutreachSection: true,
+      "We took a bold step by organizing a full workshop event on campus dedicated to healthy eating. The session featured a presentation covering topics like replacing processed food with fresh ingredients, meal planning for a balanced diet, and maintaining consistency in healthy habits. The event attracted a large group of students who actively participated in the discussion. The key message: eating healthy is not just a diet — it's a lifestyle!",
     hasWorkshopGallery: true,
   },
   {
@@ -71,8 +70,10 @@ export const weeklyEntries: WeeklyEntry[] = [
     date: "Week 6 — Challenge 7",
     title: "Foster Collaboration",
     description:
-      "We strengthened teamwork and built collaborative partnerships for our project.",
-    content: "",
+      "We strengthened teamwork and built collaborative partnerships by reaching out to organizations and securing a nutrition expert workshop.",
+    content:
+      "As part of our effort to build meaningful partnerships, we contacted three organizations: the NU Cooking Club (proposing a hands-on cooking workshop or cook-off event), Cult Academy (proposing a professional chef-led workshop and chef interview), and the University Health Center (requesting an interview/discussion session with a nutritionist). In parallel, we invited a recognized Kazakhstan-based nutrition specialist with experience helping over 1,000 women improve their body composition, digestion, and well-being. She has officially agreed to conduct a workshop after March 10. The session will include a structured lecture on balanced nutrition, sustainable weight management, and gut health, followed by an interactive Q&A. The exact date and format (offline/online) will be confirmed soon.",
+    hasOutreachSection: true,
   },
   {
     id: "week-7",
