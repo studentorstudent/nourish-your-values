@@ -6,8 +6,9 @@ import workshop3 from "@/assets/workshop-3.jpg";
 import workshop4 from "@/assets/workshop-4.jpg";
 import workshop5 from "@/assets/workshop-5.jpg";
 import workshop6 from "@/assets/workshop-6.jpg";
+import workshop7 from "@/assets/workshop-7.jpg";
 
-const photos = [workshop1, workshop2, workshop3, workshop4, workshop5, workshop6];
+const photos = [workshop1, workshop2, workshop3, workshop4, workshop5, workshop6, workshop7];
 
 const WorkshopGallery = () => {
   const [lightbox, setLightbox] = useState<number | null>(null);
