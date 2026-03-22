@@ -2,6 +2,7 @@ import { weeklyEntries } from "@/data/weekly-progress";
 import { CalendarDays, FileText, ExternalLink } from "lucide-react";
 import SurveyResults from "./SurveyResults";
 import OutreachSection from "./OutreachSection";
+import WorkshopGallery from "./WorkshopGallery";
 
 const ProgressSection = () => {
   return (
