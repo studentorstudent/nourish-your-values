@@ -5,7 +5,7 @@ export interface WeeklyEntry {
   description: string;
   content: string;
   pdfUrl?: string;
-  vimeoId?: string;
+  vimeoId?: string | string[];
   surveyFormUrl?: string;
   hasSurveyResults?: boolean;
   hasOutreachSection?: boolean;
