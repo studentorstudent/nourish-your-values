@@ -71,10 +71,10 @@ const ProgressSection = () => {
               {entry.hasWorkshopGallery && <WorkshopGallery />}
 
               {/* Vimeo Video Embed */}
-              {entry.vimeoId && (
-                <div className="mt-4 rounded-xl overflow-hidden aspect-video">
+              {entry.vimeoId && (Array.isArray(entry.vimeoId) ? entry.vimeoId : [entry.vimeoId]).map((id) => (
+                <div key={id} className="mt-4 rounded-xl overflow-hidden aspect-video">
                   <iframe
-                    src={`https://player.vimeo.com/video/${entry.vimeoId}?badge=0&autopause=0&player_id=0&app_id=58479`}
+                    src={`https://player.vimeo.com/video/${id}?badge=0&autopause=0&player_id=0&app_id=58479`}
                     width="100%"
                     height="100%"
                     frameBorder="0"
@@ -83,7 +83,7 @@ const ProgressSection = () => {
                     className="w-full h-full"
                   />
                 </div>
-              )}
+              ))}
             </article>
           ))}
         </div>
