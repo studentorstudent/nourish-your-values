@@ -50,7 +50,7 @@ export const weeklyEntries: WeeklyEntry[] = [
     description:
       "We identified current gaps in student nutrition by conducting a campus-wide survey with 31 respondents.",
     content:
-      "To understand the real challenges students face with healthy eating, we created a comprehensive poll and shared it across campus. The survey covered demographics, nutrition knowledge, food accessibility, barriers, and potential solutions. Key findings revealed that lack of motivation (58.1%), lack of time (67.7%), and cost (35.5%) are the biggest barriers. Social media (77.4%) is the primary source of nutrition information, and most students want discounts for healthy food (67.7%) and more affordable campus options.",
+      "To understand the real challenges students face with healthy eating, we created a comprehensive poll and shared it across campus. The survey covered demographics, nutrition knowledge, food accessibility, barriers, and potential solutions. Key findings revealed that lack of motivation (58.1%), lack of time (67.7%), and cost (35.5%) are the biggest barriers. Social media (77.4%) is the primary source of nutrition information, and most students want discounts for healthy food (67.7%) and more affordable campus options.\n\nBuilding on these survey insights, we conducted a short interview with a fellow student who has personal experience maintaining a healthy lifestyle. We asked how she navigates the very barriers our respondents highlighted — staying motivated, managing time, and eating well on a budget — to share practical, relatable advice with our audience.",
     surveyFormUrl:
       "https://docs.google.com/forms/d/e/1FAIpQLSck6fBdUnvZ8nCKPqYrMhkVP9k1G4UTlTW5d5s9lLzv0-Vo_w/viewform?usp=header",
     hasSurveyResults: true,
