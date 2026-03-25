@@ -72,16 +72,23 @@ const ProgressSection = () => {
 
               {/* Vimeo Video Embed */}
               {entry.vimeoId && (Array.isArray(entry.vimeoId) ? entry.vimeoId : [entry.vimeoId]).map((id) => (
-                <div key={id} className="mt-4 rounded-xl overflow-hidden aspect-video">
-                  <iframe
-                    src={`https://player.vimeo.com/video/${id}?badge=0&autopause=0&player_id=0&app_id=58479`}
-                    width="100%"
-                    height="100%"
-                    frameBorder="0"
-                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
-                    title={entry.title}
-                    className="w-full h-full"
-                  />
+                <div key={id} className="mt-4">
+                  {entry.videoCaption && (
+                    <p className="text-sm text-muted-foreground leading-relaxed mb-3 italic border-l-2 border-primary/40 pl-3">
+                      {entry.videoCaption}
+                    </p>
+                  )}
+                  <div className="rounded-xl overflow-hidden aspect-video">
+                    <iframe
+                      src={`https://player.vimeo.com/video/${id}?badge=0&autopause=0&player_id=0&app_id=58479`}
+                      width="100%"
+                      height="100%"
+                      frameBorder="0"
+                      allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                      title={entry.title}
+                      className="w-full h-full"
+                    />
+                  </div>
                 </div>
               ))}
             </article>

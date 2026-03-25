@@ -6,6 +6,7 @@ export interface WeeklyEntry {
   content: string;
   pdfUrl?: string;
   vimeoId?: string | string[];
+  videoCaption?: string;
   surveyFormUrl?: string;
   hasSurveyResults?: boolean;
   hasOutreachSection?: boolean;
@@ -55,6 +56,7 @@ export const weeklyEntries: WeeklyEntry[] = [
       "https://docs.google.com/forms/d/e/1FAIpQLSck6fBdUnvZ8nCKPqYrMhkVP9k1G4UTlTW5d5s9lLzv0-Vo_w/viewform?usp=header",
     hasSurveyResults: true,
     vimeoId: "1176892753",
+    videoCaption: "Building on the survey findings above, we interviewed a fellow student who actively maintains a healthy lifestyle. We asked how she overcomes the very barriers our respondents highlighted — staying motivated, managing time, and eating well on a budget — to share practical, relatable advice.",
   },
   {
     id: "week-5",
