@@ -64,7 +64,7 @@ export const weeklyEntries: WeeklyEntry[] = [
     content:
       "We took a bold step by organizing a full workshop event on campus dedicated to healthy eating. The session featured a presentation covering topics like replacing processed food with fresh ingredients, meal planning for a balanced diet, and maintaining consistency in healthy habits. The event attracted a large group of students who actively participated in the discussion. The key message: eating healthy is not just a diet — it's a lifestyle!",
     hasWorkshopGallery: true,
-    vimeoId: ["1175890873", "1176204589"],
+    vimeoId: ["1175890873", "1176204589", "1176892753"],
   },
   {
     id: "week-6",
