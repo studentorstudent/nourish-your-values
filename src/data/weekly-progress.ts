@@ -86,7 +86,8 @@ export const weeklyEntries: WeeklyEntry[] = [
     title: "Strengthen Others, Recognize Contributions & Celebrate Values",
     description:
       "We wrapped up by empowering others, recognizing everyone's contributions, and celebrating the values that guided our journey.",
-    content: "",
+    content:
+      "As part of Challenge 7, we organized a nutrition workshop led by a professional specialist. The lecture covered several important topics that resonated with students:\n\n• Avoid sugary drinks — they are one of the biggest dietary problems, as they spike insulin levels rapidly (being the fastest carbohydrate)\n• White bread significantly raises blood sugar levels\n• It's worth eliminating sunflower oil from your diet\n• The importance of sleep between 11 PM and 2 AM for recovery and metabolism\n• The role of Vitamin D3 and Omega fatty acids in overall health\n• Magnesium glycinate as a recommended supplement\n\nThe workshop gave students practical, actionable advice they could immediately apply to their daily routines.",
     hasWeek7Gallery: true,
   },
 ];
