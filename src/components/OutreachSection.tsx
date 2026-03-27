@@ -1,4 +1,4 @@
-import { Mail, CheckCircle, Clock } from "lucide-react";
+import { Mail, CheckCircle, ExternalLink } from "lucide-react";
 import emailCookingClub from "@/assets/email-cooking-club.png";
 import emailCultAcademy from "@/assets/email-cult-academy.png";
 import emailHealthCenter from "@/assets/email-health-center.png";
@@ -8,7 +8,6 @@ const outreachItems = [
   {
     org: "NU Cooking Club",
     email: "cooking_club@nu.edu.kz",
-    status: "pending" as const,
     summary:
       "Proposed a hands-on cooking workshop or cook-off style event where teams cook together with an experienced mentor while learning about nutritional value.",
     image: emailCookingClub,
@@ -16,7 +15,6 @@ const outreachItems = [
   {
     org: "Cult Academy",
     email: "cult.academy.lc@gmail.com",
-    status: "pending" as const,
     summary:
       "Proposed a professional chef-led cooking workshop and a short interview with one of their chefs about healthy ingredient selection and practical student advice.",
     image: emailCultAcademy,
@@ -24,7 +22,6 @@ const outreachItems = [
   {
     org: "University Health Center",
     email: "uhc@nu.edu.kz",
-    status: "pending" as const,
     summary:
       "Requested a collaboration for an interview or discussion session with a nutritionist or doctor specializing in diet and healthy lifestyle.",
     image: emailHealthCenter,
@@ -50,6 +47,15 @@ const OutreachSection = () => {
           She has supported more than 1,000 women in achieving measurable
           improvements in body composition, digestion, and overall well-being.
         </p>
+        <a
+          href="https://www.instagram.com/sandygul_aizharikova?igsh=MXFnY2hnOTByNGkzcg=="
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-1.5 text-xs text-primary hover:underline mb-3"
+        >
+          <ExternalLink className="w-3.5 h-3.5" />
+          View expert's Instagram profile
+        </a>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-muted-foreground">
           <div className="bg-card rounded-lg p-3 border border-border">
             <p className="font-medium text-foreground mb-1">Workshop Topics</p>
@@ -87,9 +93,9 @@ const OutreachSection = () => {
                 <h5 className="text-sm font-semibold text-foreground">
                   {item.org}
                 </h5>
-                <span className="inline-flex items-center gap-1 text-[10px] px-2 py-0.5 rounded-full bg-yellow-500/10 text-yellow-600 border border-yellow-500/20">
-                  <Clock className="w-3 h-3" />
-                  Pending
+                <span className="inline-flex items-center gap-1 text-[10px] px-2 py-0.5 rounded-full bg-green-500/10 text-green-600 border border-green-500/20">
+                  <CheckCircle className="w-3 h-3" />
+                  Contacted
                 </span>
               </div>
               <div className="flex items-center gap-1.5 text-xs text-muted-foreground">
