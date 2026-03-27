@@ -4,6 +4,7 @@ import { CalendarDays, FileText, ExternalLink, ChevronDown } from "lucide-react"
 import SurveyResults from "./SurveyResults";
 import OutreachSection from "./OutreachSection";
 import WorkshopGallery from "./WorkshopGallery";
+import Week7Gallery from "./Week7Gallery";
 
 const ProgressSection = () => {
   const [openId, setOpenId] = useState<string | null>(null);
@@ -106,6 +107,7 @@ const ProgressSection = () => {
                           {entry.hasSurveyResults && <SurveyResults />}
                           {entry.hasOutreachSection && <OutreachSection />}
                           {entry.hasWorkshopGallery && <WorkshopGallery />}
+                          {entry.hasWeek7Gallery && <Week7Gallery />}
 
                           {/* Vimeo Videos */}
                           {entry.vimeoId &&

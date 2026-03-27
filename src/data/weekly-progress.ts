@@ -11,6 +11,7 @@ export interface WeeklyEntry {
   hasSurveyResults?: boolean;
   hasOutreachSection?: boolean;
   hasWorkshopGallery?: boolean;
+  hasWeek7Gallery?: boolean;
 }
 
 export const weeklyEntries: WeeklyEntry[] = [
@@ -86,5 +87,6 @@ export const weeklyEntries: WeeklyEntry[] = [
     description:
       "We wrapped up by empowering others, recognizing everyone's contributions, and celebrating the values that guided our journey.",
     content: "",
+    hasWeek7Gallery: true,
   },
 ];
