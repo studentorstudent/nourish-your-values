@@ -11,6 +11,13 @@ const links = [
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   useEffect(() => {
     const sectionIds = links.map((l) => l.href.replace("#", ""));
@@ -36,9 +43,15 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? "bg-background/90 backdrop-blur-xl border-b border-border/50 shadow-lg shadow-background/20"
+          : "bg-transparent border-b border-transparent"
+      }`}
+    >
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
-        <a href="#home" className="text-xl font-bold font-['Playfair_Display'] text-primary">
+        <a href="#home" className="text-xl font-bold font-['Playfair_Display'] text-gradient-primary">
           GoodFood
         </a>
         <div className="hidden md:flex gap-8">
@@ -48,7 +61,7 @@ const Navbar = () => {
               <a
                 key={l.href}
                 href={l.href}
-                className={`text-sm font-medium transition-colors relative ${
+                className={`text-sm font-medium transition-all relative ${
                   isActive
                     ? "text-primary"
                     : "text-muted-foreground hover:text-foreground"
@@ -56,7 +69,7 @@ const Navbar = () => {
               >
                 {l.label}
                 {isActive && (
-                  <span className="absolute -bottom-[21px] left-0 right-0 h-0.5 bg-primary rounded-full" />
+                  <span className="absolute -bottom-[21px] left-0 right-0 h-0.5 bg-gradient-to-r from-primary to-primary/40 rounded-full" />
                 )}
               </a>
             );
@@ -71,7 +84,7 @@ const Navbar = () => {
         </button>
       </div>
       {open && (
-        <div className="md:hidden bg-background/95 backdrop-blur-md border-b border-border px-6 pb-4 flex flex-col gap-3">
+        <div className="md:hidden bg-background/95 backdrop-blur-xl border-b border-border px-6 pb-4 flex flex-col gap-3">
           {links.map((l) => {
             const isActive = activeSection === l.href.replace("#", "");
             return (
