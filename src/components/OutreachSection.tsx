@@ -70,14 +70,17 @@ const OutreachSection = () => {
 
         {/* Interview Photo */}
         <div className="mb-5">
-          <img
-            src={expertInterview}
-            alt="Sandygul Aizharikova during a media interview"
-            className="w-full rounded-lg border border-border object-cover max-h-72"
-          />
-          <p className="text-[10px] text-muted-foreground mt-1.5 text-center italic">
-            Sandygul Aizharikova during a media interview
-          </p>
+          <div className="relative rounded-xl overflow-hidden border border-border group">
+            <img
+              src={expertInterview}
+              alt="Sandygul Aizharikova during a media interview"
+              className="w-full object-cover aspect-video"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+            <p className="absolute bottom-3 left-0 right-0 text-xs text-white/90 text-center italic font-medium">
+              Sandygul Aizharikova during a media interview
+            </p>
+          </div>
         </div>
 
         {/* Workshop Details */}
