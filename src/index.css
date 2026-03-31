@@ -106,12 +106,13 @@
 .card-glow {
   position: relative;
   transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  background-image: radial-gradient(ellipse at top right, hsl(142, 40%, 45%, 0.03), transparent 60%);
 }
 
 .card-glow:hover {
   border-color: hsl(142, 40%, 45%, 0.4);
   transform: translateY(-4px);
-  box-shadow: 0 12px 40px -12px hsl(142, 40%, 45%, 0.15);
+  box-shadow: 0 12px 40px -12px hsl(142, 40%, 45%, 0.15), 0 0 0 1px hsl(142, 40%, 45%, 0.1);
 }
 
 /* Subtle floating animation */
@@ -138,4 +139,30 @@
 .section-divider {
   height: 1px;
   background: linear-gradient(90deg, transparent, hsl(142, 40%, 45%, 0.3), hsl(30, 60%, 50%, 0.3), transparent);
+}
+
+/* Alternating section backgrounds */
+.section-alt {
+  background-image: radial-gradient(ellipse at bottom left, hsl(142, 40%, 45%, 0.04), transparent 50%),
+                    radial-gradient(ellipse at top right, hsl(30, 60%, 50%, 0.03), transparent 50%);
+}
+
+/* Video embed glow animation */
+@keyframes video-glow {
+  0%, 100% { box-shadow: 0 0 20px hsl(142, 40%, 45%, 0.1); }
+  50% { box-shadow: 0 0 30px hsl(142, 40%, 45%, 0.2); }
+}
+
+.video-glow {
+  animation: video-glow 3s ease-in-out infinite;
+}
+
+/* Noise texture overlay */
+.noise-overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
 }

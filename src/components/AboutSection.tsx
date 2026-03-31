@@ -14,7 +14,7 @@ const AboutSection = () => {
   const { ref: gridRef, visible: gridVisible } = useScrollReveal(0.1);
 
   return (
-    <section id="about" className="py-24 px-6 relative">
+    <section id="about" className="py-24 px-6 relative section-alt">
       {/* Top divider */}
       <div className="section-divider w-full absolute top-0 left-0" />
 
