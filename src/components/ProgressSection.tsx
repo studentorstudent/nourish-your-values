@@ -149,23 +149,30 @@ const TimelineCard = ({ entry, isOpen, index, onToggle }: TimelineCardProps) => 
               {/* Vimeo Videos */}
               {entry.vimeoId &&
                 (Array.isArray(entry.vimeoId) ? entry.vimeoId : [entry.vimeoId]).map(
-                  (id) => (
-                    <div key={id} className="mt-4">
-                      {entry.videoCaption && (
+                  (id, vidIndex) => (
+                    <div key={id} className="mt-5">
+                      {entry.videoCaption && vidIndex === 0 && (
                         <p className="text-sm text-muted-foreground leading-relaxed mb-3 italic border-l-2 border-primary/40 pl-3">
                           {entry.videoCaption}
                         </p>
                       )}
-                      <div className="rounded-xl overflow-hidden aspect-video">
-                        <iframe
-                          src={`https://player.vimeo.com/video/${id}?badge=0&autopause=0&player_id=0&app_id=58479`}
-                          width="100%"
-                          height="100%"
-                          frameBorder="0"
-                          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
-                          title={entry.title}
-                          className="w-full h-full"
-                        />
+                      <div className="relative rounded-xl overflow-hidden border-2 border-primary/30 shadow-[0_0_20px_hsl(142,40%,45%,0.1)] hover:shadow-[0_0_30px_hsl(142,40%,45%,0.2)] transition-shadow duration-300">
+                        {/* Video label */}
+                        <div className="absolute top-3 left-3 z-10 flex items-center gap-1.5 bg-primary/90 text-primary-foreground text-[11px] font-semibold px-2.5 py-1 rounded-md backdrop-blur-sm">
+                          <Play className="w-3 h-3 fill-current" />
+                          <span>Video {Array.isArray(entry.vimeoId) && entry.vimeoId.length > 1 ? `${vidIndex + 1}/${entry.vimeoId.length}` : ""}</span>
+                        </div>
+                        <div className="aspect-video">
+                          <iframe
+                            src={`https://player.vimeo.com/video/${id}?badge=0&autopause=0&player_id=0&app_id=58479`}
+                            width="100%"
+                            height="100%"
+                            frameBorder="0"
+                            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                            title={entry.title}
+                            className="w-full h-full"
+                          />
+                        </div>
                       </div>
                     </div>
                   )
