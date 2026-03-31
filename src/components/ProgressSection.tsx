@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { weeklyEntries } from "@/data/weekly-progress";
-import { CalendarDays, FileText, ExternalLink, ChevronDown } from "lucide-react";
+import { CalendarDays, FileText, ExternalLink, ChevronDown, Play } from "lucide-react";
 import SurveyResults from "./SurveyResults";
 import OutreachSection from "./OutreachSection";
 import WorkshopGallery from "./WorkshopGallery";
