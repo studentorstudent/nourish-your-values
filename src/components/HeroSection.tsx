@@ -45,7 +45,7 @@ const HeroSection = () => {
         </p>
         <a
           href="#progress"
-          className="inline-block bg-primary text-primary-foreground font-semibold px-8 py-3.5 rounded-lg hover:bg-primary/90 transition-all hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-0.5 text-sm"
+          className="inline-block bg-primary text-primary-foreground font-semibold px-8 py-3.5 rounded-lg hover:bg-primary/90 transition-all hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-0.5 text-sm animate-glow-pulse"
         >
           Follow Our Weekly Progress
         </a>
