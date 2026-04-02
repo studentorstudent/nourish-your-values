@@ -17,9 +17,12 @@ const certificates = [cert1, cert2, cert3, cert4];
 const CelebrationGallery = () => {
   const [lightbox, setLightbox] = useState<number | null>(null);
 
+  const allImages = [...photos.map(p => p.src), ...certificates];
+  const allAlts = [...photos.map(p => p.alt), ...certificates.map((_, i) => `Certificate ${i + 1}`)];
+
   const navigate = (dir: 1 | -1) => {
     if (lightbox === null) return;
-    setLightbox((lightbox + dir + photos.length) % photos.length);
+    setLightbox((lightbox + dir + allImages.length) % allImages.length);
   };
 
   return (
