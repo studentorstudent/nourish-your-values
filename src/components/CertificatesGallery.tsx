@@ -1,35 +1,34 @@
 import { useState } from "react";
-import { PartyPopper, X, ChevronLeft, ChevronRight } from "lucide-react";
-import c1 from "@/assets/celebration-food.jpg";
-import c2 from "@/assets/celebration-team.jpg";
+import { Award, X, ChevronLeft, ChevronRight } from "lucide-react";
+import cert1 from "@/assets/cert-1.png";
+import cert2 from "@/assets/cert-2.png";
+import cert3 from "@/assets/cert-3.png";
+import cert4 from "@/assets/cert-4.png";
 
-const photos = [
-  { src: c1, alt: "Celebration dinner — traditional plov dish" },
-  { src: c2, alt: "Team celebrating together" },
-];
+const certificates = [cert1, cert2, cert3, cert4];
 
-const CelebrationGallery = () => {
+const CertificatesGallery = () => {
   const [lightbox, setLightbox] = useState<number | null>(null);
 
   const navigate = (dir: 1 | -1) => {
     if (lightbox === null) return;
-    setLightbox((lightbox + dir + photos.length) % photos.length);
+    setLightbox((lightbox + dir + certificates.length) % certificates.length);
   };
 
   return (
-    <div className="mt-6 space-y-4">
+    <div className="mt-6 space-y-3">
       <div className="flex items-center gap-2 text-sm font-medium text-muted-foreground">
-        <PartyPopper className="w-4 h-4 text-primary" />
-        <span>Celebration Photos</span>
+        <Award className="w-4 h-4 text-primary" />
+        <span>Certificates of Achievement</span>
       </div>
-      <div className="grid grid-cols-2 gap-3">
-        {photos.map((photo, i) => (
+      <div className="grid grid-cols-4 gap-2">
+        {certificates.map((src, i) => (
           <button
             key={i}
             onClick={() => setLightbox(i)}
-            className="overflow-hidden rounded-xl border border-border hover:border-primary/40 transition-colors aspect-[4/3]"
+            className="overflow-hidden rounded-lg border border-border hover:border-primary/40 transition-colors aspect-[3/4]"
           >
-            <img src={photo.src} alt={photo.alt} className="w-full h-full object-cover" />
+            <img src={src} alt={`Certificate ${i + 1}`} className="w-full h-full object-cover" />
           </button>
         ))}
       </div>
@@ -49,8 +48,8 @@ const CelebrationGallery = () => {
             <ChevronLeft className="w-8 h-8" />
           </button>
           <img
-            src={photos[lightbox].src}
-            alt={photos[lightbox].alt}
+            src={certificates[lightbox]}
+            alt={`Certificate ${lightbox + 1}`}
             className="max-h-[85vh] max-w-[90vw] object-contain rounded-lg"
             onClick={(e) => e.stopPropagation()}
           />
@@ -66,4 +65,4 @@ const CelebrationGallery = () => {
   );
 };
 
-export default CelebrationGallery;
+export default CertificatesGallery;
