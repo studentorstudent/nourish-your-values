@@ -146,7 +146,7 @@ const TimelineCard = ({ entry, isOpen, index, onToggle }: TimelineCardProps) => 
               {entry.hasOutreachSection && <OutreachSection />}
               {entry.hasWorkshopGallery && <WorkshopGallery />}
               {entry.hasWeek7Gallery && <Week7Gallery />}
-
+              {entry.hasCelebrationGallery && <CelebrationGallery />}
               {/* Vimeo Videos */}
               {entry.vimeoId &&
                 (Array.isArray(entry.vimeoId) ? entry.vimeoId : [entry.vimeoId]).map(
