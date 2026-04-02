@@ -40,6 +40,24 @@ const CelebrationGallery = () => {
         ))}
       </div>
 
+      {/* Certificates - small thumbnails */}
+      <div className="mt-4">
+        <div className="flex items-center gap-2 text-xs font-medium text-muted-foreground mb-2">
+          <Award className="w-3.5 h-3.5 text-primary" />
+          <span>Certificates of Achievement</span>
+        </div>
+        <div className="grid grid-cols-4 gap-2">
+          {certificates.map((src, i) => (
+            <button
+              key={i}
+              onClick={() => setLightbox(photos.length + i)}
+              className="overflow-hidden rounded-lg border border-border hover:border-primary/40 transition-colors aspect-[3/4]"
+            >
+              <img src={src} alt={`Certificate ${i + 1}`} className="w-full h-full object-cover" />
+            </button>
+          ))}
+        </div>
+      </div>
       {lightbox !== null && (
         <div
           className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center"
