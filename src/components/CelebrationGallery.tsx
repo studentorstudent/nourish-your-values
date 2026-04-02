@@ -76,8 +76,8 @@ const CelebrationGallery = () => {
             <ChevronLeft className="w-8 h-8" />
           </button>
           <img
-            src={photos[lightbox].src}
-            alt={photos[lightbox].alt}
+            src={allImages[lightbox]}
+            alt={allAlts[lightbox]}
             className="max-h-[85vh] max-w-[90vw] object-contain rounded-lg"
             onClick={(e) => e.stopPropagation()}
           />
