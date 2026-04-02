@@ -5,6 +5,7 @@ import SurveyResults from "./SurveyResults";
 import OutreachSection from "./OutreachSection";
 import WorkshopGallery from "./WorkshopGallery";
 import Week7Gallery from "./Week7Gallery";
+import CertificatesGallery from "./CertificatesGallery";
 import CelebrationGallery from "./CelebrationGallery";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
