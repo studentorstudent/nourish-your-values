@@ -91,7 +91,8 @@ export const weeklyEntries: WeeklyEntry[] = [
     description:
       "We wrapped up by empowering others, recognizing everyone's contributions, and celebrating the values that guided our journey.",
     content:
-      "In our final week, we reflected on the entire journey — what we learned, how we grew as a team, and the impact our project had on promoting healthy nutrition among students. We celebrated our shared values, recognized each team member's contributions, and shared our honest opinions about the experience.",
+      "In our final week, we reflected on the entire journey — what we learned, how we grew as a team, and the impact our project had on promoting healthy nutrition among students.\n\nChallenge 9 — Recognize Contributions: We created personalized certificates of achievement for each team member, acknowledging their unique contributions to the project.\n\nChallenge 10 — Celebrate Values: We celebrated our shared values with a team dinner, shared our honest opinions about the experience, and reflected on how Responsibility, Discipline, Awareness, Self-respect, and Community impact guided us throughout.",
+    hasCertificatesGallery: true,
     hasCelebrationGallery: true,
     vimeoId: "1179683902",
   },
