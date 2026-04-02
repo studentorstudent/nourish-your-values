@@ -1,12 +1,18 @@
 import { useState } from "react";
-import { PartyPopper, X, ChevronLeft, ChevronRight } from "lucide-react";
+import { PartyPopper, Award, X, ChevronLeft, ChevronRight } from "lucide-react";
 import c1 from "@/assets/celebration-food.jpg";
 import c2 from "@/assets/celebration-team.jpg";
+import cert1 from "@/assets/cert-1.png";
+import cert2 from "@/assets/cert-2.png";
+import cert3 from "@/assets/cert-3.png";
+import cert4 from "@/assets/cert-4.png";
 
 const photos = [
   { src: c1, alt: "Celebration dinner — traditional plov dish" },
   { src: c2, alt: "Team celebrating together" },
 ];
+
+const certificates = [cert1, cert2, cert3, cert4];
 
 const CelebrationGallery = () => {
   const [lightbox, setLightbox] = useState<number | null>(null);
