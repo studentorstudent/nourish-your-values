@@ -5,6 +5,7 @@ import SurveyResults from "./SurveyResults";
 import OutreachSection from "./OutreachSection";
 import WorkshopGallery from "./WorkshopGallery";
 import Week7Gallery from "./Week7Gallery";
+import CelebrationGallery from "./CelebrationGallery";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const ProgressSection = () => {
@@ -145,7 +146,7 @@ const TimelineCard = ({ entry, isOpen, index, onToggle }: TimelineCardProps) => 
               {entry.hasOutreachSection && <OutreachSection />}
               {entry.hasWorkshopGallery && <WorkshopGallery />}
               {entry.hasWeek7Gallery && <Week7Gallery />}
-
+              {entry.hasCelebrationGallery && <CelebrationGallery />}
               {/* Vimeo Videos */}
               {entry.vimeoId &&
                 (Array.isArray(entry.vimeoId) ? entry.vimeoId : [entry.vimeoId]).map(
