@@ -88,6 +88,8 @@ export const weeklyEntries: WeeklyEntry[] = [
     title: "Strengthen Others, Recognize Contributions & Celebrate Values",
     description:
       "We wrapped up by empowering others, recognizing everyone's contributions, and celebrating the values that guided our journey.",
-    content: "",
+    content:
+      "In our final week, we reflected on the entire journey — what we learned, how we grew as a team, and the impact our project had on promoting healthy nutrition among students. We celebrated our shared values, recognized each team member's contributions, and shared our honest opinions about the experience.",
+    vimeoId: "1179683902",
   },
 ];
