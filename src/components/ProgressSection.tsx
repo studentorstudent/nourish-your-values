@@ -145,6 +145,7 @@ const TimelineCard = ({ entry, isOpen, index, onToggle }: TimelineCardProps) => 
               </div>
 
               {entry.hasSurveyResults && <SurveyResults />}
+              {entry.hasNutritionistOutreach && <NutritionistOutreach />}
               {entry.hasOutreachSection && <OutreachSection />}
               {entry.hasWorkshopGallery && <WorkshopGallery />}
               {entry.hasWeek7Gallery && <Week7Gallery />}
