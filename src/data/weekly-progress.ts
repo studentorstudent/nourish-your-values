@@ -14,6 +14,7 @@ export interface WeeklyEntry {
   hasWeek7Gallery?: boolean;
   hasCertificatesGallery?: boolean;
   hasCelebrationGallery?: boolean;
+  hasNutritionistOutreach?: boolean;
 }
 
 export const weeklyEntries: WeeklyEntry[] = [
@@ -66,9 +67,10 @@ export const weeklyEntries: WeeklyEntry[] = [
     date: "Week 5 — Challenge 6",
     title: "Experiment and Take Risks",
     description:
-      "We organized a healthy eating workshop for students, presenting on nutrition principles and steps to adopt a healthier diet.",
+      "We actively searched for nutritionists and organized a healthy eating workshop for students, presenting on nutrition principles and steps to adopt a healthier diet.",
     content:
-      "We took a bold step by organizing a full workshop event on campus dedicated to healthy eating. The session featured a presentation covering topics like replacing processed food with fresh ingredients, meal planning for a balanced diet, and maintaining consistency in healthy habits. The event attracted a large group of students who actively participated in the discussion. The key message: eating healthy is not just a diet — it's a lifestyle!",
+      "As part of this challenge, we actively reached out to multiple nutritionists and dietologists via Instagram — including doctor_sabitovaleila, dietolog_muhiddin, aitymzhakupov, aiman_dietolog, and nutriciolog_kazhenova — inviting them to share their expertise with students at Nazarbayev University. We explained our project goals and proposed various collaboration formats: offline/online interviews, master classes, workshops, and video Q&A sessions.\n\nIn parallel, we took a bold step by organizing a full workshop event on campus dedicated to healthy eating. The session featured a presentation covering topics like replacing processed food with fresh ingredients, meal planning for a balanced diet, and maintaining consistency in healthy habits. The event attracted a large group of students who actively participated in the discussion. The key message: eating healthy is not just a diet — it's a lifestyle!",
+    hasNutritionistOutreach: true,
     hasWorkshopGallery: true,
     vimeoId: ["1175890873", "1176204589"],
   },

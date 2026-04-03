@@ -7,6 +7,7 @@ import WorkshopGallery from "./WorkshopGallery";
 import Week7Gallery from "./Week7Gallery";
 import CertificatesGallery from "./CertificatesGallery";
 import CelebrationGallery from "./CelebrationGallery";
+import NutritionistOutreach from "./NutritionistOutreach";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const ProgressSection = () => {
@@ -144,6 +145,7 @@ const TimelineCard = ({ entry, isOpen, index, onToggle }: TimelineCardProps) => 
               </div>
 
               {entry.hasSurveyResults && <SurveyResults />}
+              {entry.hasNutritionistOutreach && <NutritionistOutreach />}
               {entry.hasOutreachSection && <OutreachSection />}
               {entry.hasWorkshopGallery && <WorkshopGallery />}
               {entry.hasWeek7Gallery && <Week7Gallery />}
