@@ -53,12 +53,13 @@ export const weeklyEntries: WeeklyEntry[] = [
     date: "Week 4 — Challenge 5",
     title: "Search for Opportunities",
     description:
-      "We identified current gaps in student nutrition by conducting a campus-wide survey with 31 respondents.",
+      "We identified current gaps in student nutrition by conducting a campus-wide survey with 31 respondents and actively searched for nutrition experts to collaborate with.",
     content:
-      "To understand the real challenges students face with healthy eating, we created a comprehensive poll and shared it across campus. The survey covered demographics, nutrition knowledge, food accessibility, barriers, and potential solutions. Key findings revealed that lack of motivation (58.1%), lack of time (67.7%), and cost (35.5%) are the biggest barriers. Social media (77.4%) is the primary source of nutrition information, and most students want discounts for healthy food (67.7%) and more affordable campus options.\n\nBuilding on these survey insights, we conducted a short interview with a fellow student who has personal experience maintaining a healthy lifestyle. We asked how she navigates the very barriers our respondents highlighted — staying motivated, managing time, and eating well on a budget — to share practical, relatable advice with our audience.",
+      "To understand the real challenges students face with healthy eating, we created a comprehensive poll and shared it across campus. The survey covered demographics, nutrition knowledge, food accessibility, barriers, and potential solutions. Key findings revealed that lack of motivation (58.1%), lack of time (67.7%), and cost (35.5%) are the biggest barriers. Social media (77.4%) is the primary source of nutrition information, and most students want discounts for healthy food (67.7%) and more affordable campus options.\n\nAs part of searching for opportunities, we actively reached out to multiple nutritionists and dietologists via Instagram — including doctor_sabitovaleila, dietolog_muhiddin, aitymzhakupov, aiman_dietolog, and nutriciolog_kazhenova — inviting them to share their expertise with students at Nazarbayev University. We explained our project goals and proposed various collaboration formats: offline/online interviews, master classes, workshops, and video Q&A sessions.\n\nBuilding on these survey insights, we conducted a short interview with a fellow student who has personal experience maintaining a healthy lifestyle. We asked how she navigates the very barriers our respondents highlighted — staying motivated, managing time, and eating well on a budget — to share practical, relatable advice with our audience.",
     surveyFormUrl:
       "https://docs.google.com/forms/d/e/1FAIpQLSck6fBdUnvZ8nCKPqYrMhkVP9k1G4UTlTW5d5s9lLzv0-Vo_w/viewform?usp=header",
     hasSurveyResults: true,
+    hasNutritionistOutreach: true,
     vimeoId: "1176892753",
     videoCaption: "Building on the survey findings above, we interviewed a fellow student who actively maintains a healthy lifestyle. We asked how she overcomes the very barriers our respondents highlighted — staying motivated, managing time, and eating well on a budget — to share practical, relatable advice.",
   },
@@ -67,10 +68,9 @@ export const weeklyEntries: WeeklyEntry[] = [
     date: "Week 5 — Challenge 6",
     title: "Experiment and Take Risks",
     description:
-      "We actively searched for nutritionists and organized a healthy eating workshop for students, presenting on nutrition principles and steps to adopt a healthier diet.",
+      "We organized a healthy eating workshop for students, presenting on nutrition principles and steps to adopt a healthier diet.",
     content:
-      "As part of this challenge, we actively reached out to multiple nutritionists and dietologists via Instagram — including doctor_sabitovaleila, dietolog_muhiddin, aitymzhakupov, aiman_dietolog, and nutriciolog_kazhenova — inviting them to share their expertise with students at Nazarbayev University. We explained our project goals and proposed various collaboration formats: offline/online interviews, master classes, workshops, and video Q&A sessions.\n\nIn parallel, we took a bold step by organizing a full workshop event on campus dedicated to healthy eating. The session featured a presentation covering topics like replacing processed food with fresh ingredients, meal planning for a balanced diet, and maintaining consistency in healthy habits. The event attracted a large group of students who actively participated in the discussion. The key message: eating healthy is not just a diet — it's a lifestyle!",
-    hasNutritionistOutreach: true,
+      "We took a bold step by organizing a full workshop event on campus dedicated to healthy eating. The session featured a presentation covering topics like replacing processed food with fresh ingredients, meal planning for a balanced diet, and maintaining consistency in healthy habits. The event attracted a large group of students who actively participated in the discussion. The key message: eating healthy is not just a diet — it's a lifestyle!",
     hasWorkshopGallery: true,
     vimeoId: ["1175890873", "1176204589"],
   },
