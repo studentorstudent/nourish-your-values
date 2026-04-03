@@ -84,6 +84,27 @@ const OutreachSection = () => {
           </div>
         </div>
 
+        {/* Gratitude Message */}
+        <div className="mb-5">
+          <div className="flex items-center gap-2 mb-3">
+            <MessageCircle className="w-4 h-4 text-primary" />
+            <p className="text-xs font-medium text-foreground">Thank-You Message to the Speaker</p>
+          </div>
+          <div className="flex justify-center">
+            <div className="relative rounded-xl overflow-hidden border border-border max-w-xs">
+              <img
+                src={gratitudeMessage}
+                alt="Thank you message to the nutritionist"
+                className="w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+              <p className="absolute bottom-2 left-0 right-0 text-[10px] text-white/80 text-center italic px-3">
+                "Thank you very much for today's lecture. I think you explained the topic of a healthy lifestyle in a very interesting and unique way."
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* Workshop Details */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-muted-foreground">
           <div className="bg-card rounded-lg p-3 border border-border">
