@@ -1,11 +1,33 @@
-import { CheckCircle, ExternalLink, Users, Globe, GraduationCap, MessageCircle } from "lucide-react";
+import { CheckCircle, ExternalLink, Users, Globe, GraduationCap, MessageCircle, XCircle } from "lucide-react";
 import expertInterview from "@/assets/expert-interview.jpg";
 import expertProfile from "@/assets/expert-profile.jpg";
 import gratitudeMessage from "@/assets/gratitude-message.jpg";
+import failedWorkshopChat from "@/assets/failed-workshop-chat.png";
 
 const OutreachSection = () => {
   return (
     <div className="mt-6 space-y-6">
+      {/* Failed Workshop Attempt */}
+      <div className="bg-destructive/5 border border-destructive/20 rounded-xl p-5">
+        <div className="flex items-center gap-2 mb-3">
+          <XCircle className="w-5 h-5 text-destructive" />
+          <h4 className="text-sm font-semibold text-foreground">
+            First Attempt: Workshop Did Not Work Out
+          </h4>
+        </div>
+        <p className="text-xs text-muted-foreground leading-relaxed mb-4">
+          We had already planned a workshop with a guest speaker, but unfortunately she was unavailable by the needed dates as she was leaving the city. Despite our efforts to reschedule, the timing didn't align — so we had to pivot and find another expert.
+        </p>
+        <div className="flex justify-center">
+          <div className="relative rounded-xl overflow-hidden border border-border max-w-xs">
+            <img
+              src={failedWorkshopChat}
+              alt="WhatsApp conversation showing the workshop cancellation due to scheduling conflict"
+              className="w-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
       {/* Expert Profile */}
       <div className="bg-primary/5 border border-primary/20 rounded-xl p-5">
         <div className="flex items-center gap-2 mb-4">
