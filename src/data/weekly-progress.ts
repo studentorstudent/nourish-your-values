@@ -14,6 +14,7 @@ export interface WeeklyEntry {
   hasWeek7Gallery?: boolean;
   hasCertificatesGallery?: boolean;
   hasCelebrationGallery?: boolean;
+  hasNutritionistOutreach?: boolean;
 }
 
 export const weeklyEntries: WeeklyEntry[] = [
