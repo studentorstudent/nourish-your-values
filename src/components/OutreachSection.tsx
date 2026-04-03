@@ -1,6 +1,7 @@
-import { CheckCircle, ExternalLink, Users, Globe, GraduationCap } from "lucide-react";
+import { CheckCircle, ExternalLink, Users, Globe, GraduationCap, MessageCircle } from "lucide-react";
 import expertInterview from "@/assets/expert-interview.jpg";
 import expertProfile from "@/assets/expert-profile.jpg";
+import gratitudeMessage from "@/assets/gratitude-message.jpg";
 
 const OutreachSection = () => {
   return (
