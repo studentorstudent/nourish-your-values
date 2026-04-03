@@ -1,6 +1,7 @@
-import { CheckCircle, ExternalLink, Users, Globe, GraduationCap } from "lucide-react";
+import { CheckCircle, ExternalLink, Users, Globe, GraduationCap, MessageCircle } from "lucide-react";
 import expertInterview from "@/assets/expert-interview.jpg";
 import expertProfile from "@/assets/expert-profile.jpg";
+import gratitudeMessage from "@/assets/gratitude-message.jpg";
 
 const OutreachSection = () => {
   return (
@@ -80,6 +81,27 @@ const OutreachSection = () => {
             <p className="absolute bottom-3 left-0 right-0 text-xs text-white/90 text-center italic font-medium">
               Sandygul Aizharikova — media interview
             </p>
+          </div>
+        </div>
+
+        {/* Gratitude Message */}
+        <div className="mb-5">
+          <div className="flex items-center gap-2 mb-3">
+            <MessageCircle className="w-4 h-4 text-primary" />
+            <p className="text-xs font-medium text-foreground">Thank-You Message to the Speaker</p>
+          </div>
+          <div className="flex justify-center">
+            <div className="relative rounded-xl overflow-hidden border border-border max-w-xs">
+              <img
+                src={gratitudeMessage}
+                alt="Thank you message to the nutritionist"
+                className="w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+              <p className="absolute bottom-2 left-0 right-0 text-[10px] text-white/80 text-center italic px-3">
+                "Thank you very much for today's lecture. I think you explained the topic of a healthy lifestyle in a very interesting and unique way."
+              </p>
+            </div>
           </div>
         </div>
 
