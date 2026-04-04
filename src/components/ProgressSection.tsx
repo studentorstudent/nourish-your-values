@@ -8,6 +8,7 @@ import Week7Gallery from "./Week7Gallery";
 import CertificatesGallery from "./CertificatesGallery";
 import CelebrationGallery from "./CelebrationGallery";
 import NutritionistOutreach from "./NutritionistOutreach";
+import BuddyMarathon from "./BuddyMarathon";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const ProgressSection = () => {
@@ -149,6 +150,7 @@ const TimelineCard = ({ entry, isOpen, index, onToggle }: TimelineCardProps) => 
               {entry.hasOutreachSection && <OutreachSection />}
               {entry.hasWorkshopGallery && <WorkshopGallery />}
               {entry.hasWeek7Gallery && <Week7Gallery />}
+              {entry.hasBuddyMarathon && <BuddyMarathon />}
               {entry.hasCertificatesGallery && <CertificatesGallery />}
               {entry.hasCelebrationGallery && <CelebrationGallery />}
               {/* Vimeo Videos */}

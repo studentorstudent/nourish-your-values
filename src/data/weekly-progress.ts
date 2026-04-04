@@ -15,6 +15,7 @@ export interface WeeklyEntry {
   hasCertificatesGallery?: boolean;
   hasCelebrationGallery?: boolean;
   hasNutritionistOutreach?: boolean;
+  hasBuddyMarathon?: boolean;
 }
 
 export const weeklyEntries: WeeklyEntry[] = [
@@ -87,14 +88,34 @@ export const weeklyEntries: WeeklyEntry[] = [
     vimeoId: "1178978230",
   },
   {
-    id: "week-7",
-    date: "Week 7 — Challenges 8, 9 & 10",
-    title: "Strengthen Others, Recognize Contributions & Celebrate Values",
+    id: "week-7-ch8",
+    date: "Week 7 — Challenge 8",
+    title: "Strengthen Others",
     description:
-      "We wrapped up by empowering others, recognizing everyone's contributions, and celebrating the values that guided our journey.",
+      "We empowered students to take action through a 'Buddy Marathon' — pairing participants to support each other in building healthy eating habits.",
     content:
-      "In our final week, we reflected on the entire journey — what we learned, how we grew as a team, and the impact our project had on promoting healthy nutrition among students.\n\nChallenge 9 — Recognize Contributions: We created personalized certificates of achievement for each team member, acknowledging their unique contributions to the project.\n\nChallenge 10 — Celebrate Values: We celebrated our shared values with a team dinner, shared our honest opinions about the experience, and reflected on how Responsibility, Discipline, Awareness, Self-respect, and Community impact guided us throughout.",
+      "We decided to not only inform people but also empower them to take action and support each other. Based on gaps identified in Challenge 5, especially the lack of discipline, we created a \"Buddy Marathon.\" We divided participants into pairs so that each person would support and monitor their partner in practicing one specific healthy eating habit for a week. The aim was to help them stay on track — pairing reduces the fear and isolation.\n\nWe also created a Telegram group so people without a partner could find one and so that a small community of healthy eaters could grow. In the group, participants shared photos and/or written reports about what they achieved or failed, which encouraged responsibility. They experienced peer learning in this community.\n\nWe invited students to join the marathon during our workshops (Challenges 6 and 7) and by sending invitation messages to groups. In the middle of the marathon, we collected feedback from participants to understand their progress and to see how this activity strengthened their confidence and skills.",
+    hasBuddyMarathon: true,
+  },
+  {
+    id: "week-7-ch9",
+    date: "Week 7 — Challenge 9",
+    title: "Recognize Contributions",
+    description:
+      "We created personalized certificates of achievement for each team member, acknowledging their unique contributions to the project.",
+    content:
+      "We created personalized certificates of achievement for each team member, acknowledging their unique contributions to the project. This was our way of saying thank you and recognizing the hard work everyone put in throughout the journey.",
     hasCertificatesGallery: true,
+    vimeoId: "1179835875",
+  },
+  {
+    id: "week-7-ch10",
+    date: "Week 7 — Challenge 10",
+    title: "Celebrate Values",
+    description:
+      "We celebrated our shared values with a team dinner and reflected on how our core values guided us throughout the journey.",
+    content:
+      "We celebrated our shared values with a team dinner, shared our honest opinions about the experience, and reflected on how Responsibility, Discipline, Awareness, Self-respect, and Community impact guided us throughout.",
     hasCelebrationGallery: true,
     vimeoId: "1179683902",
   },
