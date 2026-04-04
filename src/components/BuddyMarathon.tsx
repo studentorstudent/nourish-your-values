@@ -11,12 +11,23 @@ import marathonPhotosGym from "@/assets/marathon-photos-gym.png";
 import marathonPhotosFood1 from "@/assets/marathon-photos-food1.png";
 import marathonPhotosFood2 from "@/assets/marathon-photos-food2.png";
 import marathonGroup from "@/assets/marathon-group.png";
+import marathonChatFood from "@/assets/marathon-chat-food.png";
+import marathonChatNrt from "@/assets/marathon-chat-nrt.png";
+import marathonChatAlemkhan from "@/assets/marathon-chat-alemkhan.png";
+import marathonChatMansur from "@/assets/marathon-chat-mansur.png";
 
 const feedbackImages = [
   { src: marathonFeedbackAmanzhan, alt: "Feedback from Amanzhan", name: "Amanzhan" },
   { src: marathonFeedbackMagzhan, alt: "Feedback from Magzhan", name: "Magzhan" },
   { src: marathonFeedbackAkylzhan, alt: "Feedback from Akylzhan", name: "Akylzhan" },
   { src: marathonFeedbackArsen, alt: "Feedback from Arsen Serikkazy", name: "Arsen Serikkazy" },
+];
+
+const chatComments = [
+  { src: marathonChatFood, alt: "Participant sharing breakfast photos in the group", name: "Amanzhan — Breakfast" },
+  { src: marathonChatNrt, alt: "Participant sharing progress feedback", name: "Nrt — Reflection" },
+  { src: marathonChatAlemkhan, alt: "Alemkhan sharing healthy habits progress", name: "Alemkhan — Progress" },
+  { src: marathonChatMansur, alt: "Mansur sharing marathon feedback", name: "Mansur — Feedback" },
 ];
 
 const activityPhotos = [
@@ -73,6 +84,36 @@ const BuddyMarathon = () => {
               onClick={() => setLightboxImg(photo.src)}
             >
               <img src={photo.src} alt={photo.alt} className="w-full h-48 object-cover" />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Group Chat Comments */}
+      <div>
+        <div className="flex items-center gap-2 mb-3">
+          <MessageSquare className="w-5 h-5 text-primary" />
+          <h4 className="text-base font-bold text-foreground">
+            Group Chat Highlights
+          </h4>
+        </div>
+        <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+          Participants actively shared their progress, meals, and reflections in the Telegram group — holding each other accountable and celebrating small wins together.
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {chatComments.map((comment, i) => (
+            <div
+              key={i}
+              className="rounded-xl overflow-hidden border border-border bg-card cursor-pointer hover:shadow-lg hover:border-primary/40 transition-all"
+              onClick={() => setLightboxImg(comment.src)}
+            >
+              <div className="p-3 border-b border-border/50 bg-muted/30">
+                <div className="flex items-center gap-2">
+                  <MessageSquare className="w-4 h-4 text-primary" />
+                  <span className="text-sm font-semibold text-foreground">{comment.name}</span>
+                </div>
+              </div>
+              <img src={comment.src} alt={comment.alt} className="w-full" />
             </div>
           ))}
         </div>
