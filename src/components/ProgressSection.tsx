@@ -8,6 +8,7 @@ import Week7Gallery from "./Week7Gallery";
 import CertificatesGallery from "./CertificatesGallery";
 import CelebrationGallery from "./CelebrationGallery";
 import NutritionistOutreach from "./NutritionistOutreach";
+import BuddyMarathon from "./BuddyMarathon";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const ProgressSection = () => {
