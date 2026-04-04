@@ -11,12 +11,23 @@ import marathonPhotosGym from "@/assets/marathon-photos-gym.png";
 import marathonPhotosFood1 from "@/assets/marathon-photos-food1.png";
 import marathonPhotosFood2 from "@/assets/marathon-photos-food2.png";
 import marathonGroup from "@/assets/marathon-group.png";
+import marathonChatFood from "@/assets/marathon-chat-food.png";
+import marathonChatNrt from "@/assets/marathon-chat-nrt.png";
+import marathonChatAlemkhan from "@/assets/marathon-chat-alemkhan.png";
+import marathonChatMansur from "@/assets/marathon-chat-mansur.png";
 
 const feedbackImages = [
   { src: marathonFeedbackAmanzhan, alt: "Feedback from Amanzhan", name: "Amanzhan" },
   { src: marathonFeedbackMagzhan, alt: "Feedback from Magzhan", name: "Magzhan" },
   { src: marathonFeedbackAkylzhan, alt: "Feedback from Akylzhan", name: "Akylzhan" },
   { src: marathonFeedbackArsen, alt: "Feedback from Arsen Serikkazy", name: "Arsen Serikkazy" },
+];
+
+const chatComments = [
+  { src: marathonChatFood, alt: "Participant sharing breakfast photos in the group", name: "Amanzhan — Breakfast" },
+  { src: marathonChatNrt, alt: "Participant sharing progress feedback", name: "Nrt — Reflection" },
+  { src: marathonChatAlemkhan, alt: "Alemkhan sharing healthy habits progress", name: "Alemkhan — Progress" },
+  { src: marathonChatMansur, alt: "Mansur sharing marathon feedback", name: "Mansur — Feedback" },
 ];
 
 const activityPhotos = [
