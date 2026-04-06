@@ -62,7 +62,7 @@ export const weeklyEntries: WeeklyEntry[] = [
     hasSurveyResults: true,
     hasNutritionistOutreach: true,
     vimeoId: "1176892753",
-    videoCaption: "Building on the survey findings above, we interviewed a fellow student who actively maintains a healthy lifestyle. We asked how she overcomes the very barriers our respondents highlighted — staying motivated, managing time, and eating well on a budget — to share practical, relatable advice.",
+    videoCaption: "Building on the survey findings above, we interviewed our Leadership course teacher who actively maintains a healthy lifestyle. We asked how she overcomes the very barriers our respondents highlighted — staying motivated, managing time, and eating well on a budget — to share practical, relatable advice.",
   },
   {
     id: "week-5",
